@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.tailwindcss.com;" />
+    <title>Electron System Audio Recorder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white shadow-md rounded-md p-6 max-w-md mx-auto">
+      <h1 class="text-2xl font-bold mb-4">Electron System Audio Recorder</h1>
+
+      <div class="mb-4">
+        <label for="recording-path" class="block font-medium mb-2">Recording Path: <span id="selected-folder-path" class="text-gray-500"></span></label>
+        <button
+          id="select-folder"
+          class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 hover:bg-blue-100 transition-colors duration-150 ease-in-out"
+        >
+          Select Folder
+        </button>
+      </div>
+      <div class="mb-4">
+        <label for="recording-filename" class="block font-medium mb-2 mr-2">Recording Filename:</label>
+        <div class="flex gap-4">
+          <input type="text" id="recording-filename" class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+          <span class="ml-2 bg-gray-200 text-gray-500 rounded-md px-2">.flac</span>
+        </div>
+      </div>
+      <div class="flex justify-between mt-8">
+        <button
+          id="start-recording"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+        >
+          Start Recording
+        </button>
+        <button id="stop-recording" class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-md disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+          Stop Recording
+        </button>
+      </div>
+
+      <div id="recording-status" class="mt-4 text-gray-500">Elapsed Time: <span id="elapsed-time">0s</span></div>
+
+      <div class="mt-2" id="output-file-path-container">
+        <label for="output-file-path" class="block font-medium">Output File Path:</label>
+        <div id="output-file-path" class="text-gray-500">Start Recording to see the file path</div>
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
