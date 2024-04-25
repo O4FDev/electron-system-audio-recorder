@@ -13,11 +13,9 @@ const createWindow = async () => {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      devTools: true,
+      devTools: false,
     },
   });
-
-  global.mainWindow.webContents.openDevTools();
 
   const isPermissionGranted = await checkPermissions();
 
