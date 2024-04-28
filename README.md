@@ -6,7 +6,7 @@ Hey 👋! Luke/YAE here - I just wanted to give another huge props to Sebastian 
 
 I created an original prototype of what this would look like, but for the life of me I couldn't get the Swift code working - that's where Sebastian came in to take over from me after many chats. Sebastian was compensated for his work on this project, and we mutually agreed that it should be fully open source and not backed by any corporate sponsors (please do not reach out for that). And I'm proud to say, he's smashed it out of the park - far beyond what I was expecting of him!
 
-As a side note - he's open to work, reach out to him here: [awaiting his approval, if you reach out to me I will make introductions in the meantime] I highly recommend him! 
+As a side note - he's open to work, reach out to him here: https://www.linkedin.com/in/sebastian-w%C4%85sik-b23840174/ I highly recommend him! 
 
 The project is available under the MIT license, however, you're unlikely to get any support - you can definetly reach out and I'll do my best but we're both busy people and the point of this project was to encourage the adoption and pushing of Electron.
 
