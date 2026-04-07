@@ -20,7 +20,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^29.3.0"
+    "electron": "^39.8.5"
   },
   "dependencies": {
     "shelljs": "^0.8.5"
